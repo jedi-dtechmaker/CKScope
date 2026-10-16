@@ -1,0 +1,12 @@
+node_modules/
+dist/
+build/
+.env
+.env.local
+*.log
+.DS_Store
+coverage/
+tsconfig.tsbuildinfo
+
+# Public research repo lives here; keep it out of the implementation repo
+research-repo/

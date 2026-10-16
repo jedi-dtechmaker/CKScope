@@ -1,0 +1,21 @@
+{
+  "name": "ckscope",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CKScope — a local-first CKB explorer. POC: CCC sync → PostgreSQL → REST API → React UI.",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:backend": "npm run dev -w @ckscope/backend",
+    "dev:frontend": "npm run dev -w @ckscope/frontend",
+    "dev": "npm run dev -w @ckscope/backend",
+    "build": "npm run build -w @ckscope/frontend",
+    "migrate": "npm run migrate -w @ckscope/backend",
+    "sync": "npm run sync -w @ckscope/backend",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
